@@ -1,12 +1,39 @@
-from luas.segitiga import luas_segitiga
-from luas import lingkaran, persegi
-from volume.kubik import volume_kubik
-import volume.bola
-from volume.prisma import *
+from luas.segitiga import luas as ls
+from luas.persegi import luas as lp
+from luas.lingkaran import luas as ll
+from volume.bola import hitung_volume as vb
+from volume.kubik import hitung_volume as vk
+from volume.prisma import hitung_volume as vp
 
-print("Luas Segitiga:", luas_segitiga(9, 6))
-print("Luas Lingkaran:", lingkaran.luas_lingkaran(26))
-print("Luas Persegi:", persegi.luas_persegi(28))
-print("Volume Kubus:", volume_kubik(10))
-print("Volume Bola:", volume.bola.volume_bola(27))
-print("Volume Prisma:", volume_prisma(6, 9, 28))
+#luas segitiga
+print("menghitung luas segitiga")
+print("alas = ",(9))
+print("tinggi = ",(6))
+print("Luas Segitiga:",ls(9,6))
+
+#luas lingkaran
+print("menghitung luas lingkaran")
+print("radius = ",(26))
+print("Luas Lingkaran:",ll(26))
+
+#luas persegi
+print("menghitung luas persegi")
+print("sisi = ",(28))
+print("Luas Persegi:",lp(28))
+
+#volume kubik
+print("menghitung volume kubik")
+print("sisi = ",(10))
+print("Volume kubik:",vk(10))
+
+#volume bola
+print("menghitung volume bola")
+print("radius = ",(27))
+print("Volume Bola:",vb(27))
+
+#volume prisma
+print("menghitung volume prisma")
+print("alas_segitiga = ",(6))
+print("tinggi_segitiga = ",(9))
+print("tinggi_prisma = ",(28))
+print("Volume Prisma:",vp(6, 9, 28))
